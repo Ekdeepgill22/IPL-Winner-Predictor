@@ -63,3 +63,4 @@ def predict_winner(model, encoders, target_encoder, team1, team2, toss_winner, t
     pred = model.predict(input_df)[0]
     winner = target_encoder.inverse_transform([pred])[0]
     return winner
+
